@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Android_1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_str">UserName</string>
+    <string name="pass_str">Password</string>
+    <string name="Login">Login</string>
+    <string name="Clean">Clean</string>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

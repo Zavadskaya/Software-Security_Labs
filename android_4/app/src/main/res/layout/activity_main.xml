@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/sync"
+        style="@style/Button"
+        android:layout_above="@+id/imageView1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-121dp"
+        android:onClick="startSyncRotate"
+        android:text="SyncRotate" />
+
+    <Button
+        android:id="@+id/asyncAlpha"
+        style="@style/Button"
+        android:onClick="startAsyncAlpha"
+        android:text="AsyncAlpha" />
+
+    <Button
+        android:id="@+id/async"
+        style="@style/Button"
+        android:onClick="startAsyncRotate"
+        android:text="AsyncRotate" />
+
+    <Button
+        android:id="@+id/syncAlpha"
+        style="@style/Button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="61dp"
+        android:onClick="startSyncAlpha"
+        android:text="SyncAlpha" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="247dp"
+        android:layout_height="143dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="226dp"
+        android:src="@drawable/images" />
+
+    <EditText
+        android:id="@+id/duration"
+        android:layout_width="117dp"
+        android:layout_height="91dp"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="378dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="-113dp"
+        android:hint="@string/textView1" />
+
+    <EditText
+        android:id="@+id/dela"
+        android:layout_width="121dp"
+        android:layout_height="83dp"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_marginTop="274dp"
+        android:layout_marginRight="-145dp"
+        android:hint="@string/textView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="192dp"
+        android:layout_height="142dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="3dp"
+        android:src="@drawable/imagess" />
+
+
+
+</RelativeLayout>

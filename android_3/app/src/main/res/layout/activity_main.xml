@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bsave"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:text="SaveToFile" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bread"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:text="ReadFromFile" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClick_Save"
+        android:text="Save_2" />
+
+    <Button
+        android:id="@+id/translate"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:onClick="translate"
+        android:text="Translate" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:onClick="clean"
+        android:text="clear" />
+
+
+    <EditText
+        android:id="@+id/editor"
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:gravity="top"
+        android:hint="@string/editor" />
+
+    <EditText
+        android:id="@+id/transword"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:gravity="top"
+        android:hint="@string/translate" />
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:text="Словарь" />
+</ScrollView>
+
+</LinearLayout>
