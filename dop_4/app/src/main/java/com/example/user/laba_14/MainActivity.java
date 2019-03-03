@@ -12,7 +12,7 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
-private ImageView image,image2;
+private ImageView image;
 private String[] mAnimTitles;
 private ListView mDrawerListView;
 
@@ -22,8 +22,7 @@ protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        image = findViewById(R.id.cat);
-        image2=findViewById(R.id.cat2);
+        image = findViewById(R.id.imageView);
 
         mAnimTitles = getResources().getStringArray(R.array.anim_array);
         mDrawerListView = findViewById(R.id.left_drawer);
@@ -52,10 +51,7 @@ protected void onCreate(Bundle savedInstanceState) {
         protected void move() {
         Animation animation1 =
         AnimationUtils.loadAnimation(getApplicationContext(), R.anim.translate);
-        Animation animation2 =
-                    AnimationUtils.loadAnimation(getApplicationContext(), R.anim.translate2);
         image.startAnimation(animation1);
-        image2.startAnimation(animation2);
         }
 
 
